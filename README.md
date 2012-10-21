@@ -12,12 +12,16 @@ controls.
 - Interface Builder support (just throw a UISegmentedControl and change
   its class SDSegmentedControl)
 - Animated segment selection, with animated arrow
-- Content aware dynamic segment width, also for images
+- Content aware dynamic segment width
+- Segments with image, image and text or text only
 - Scrollable if there are too many segments for width
-- Pannable by holding and moving selection
+- Pannable by holding on selection and moving
 - Enable or disable specific segments
 - Appearance customization thru UIAppearance
-- Custom segment width
+- Indiviual customizable segment width
+- UIControl events for value changes
+- SDSegmentedControlDelegate for further integration
+- Inject a custom UIButton/SDSegmentView to customize appearance
 
 ## TODO:
 
@@ -32,6 +36,17 @@ Libraries`.
 You can then use `SDSegmentedControl` class as you would use normal
 `UISegmentedControl`.
 
-# Issues:
+# License
+
+All source code is licensed under the [MIT-License](https://raw.github.com/rs/SDSegmentedControl/master/MIT-LICENSE).
+
+The icons in the example project are taken from [Glypish Free Icons created by Joseph Wain](http://glyphish.com) and licensed under the Creative Commons Attribution 3.0 United States License.
+
+## Copyright
+
+Copyright (c) 2012 by Olivier Poitrey <rs@dailymotion.com>, 
+Marius Rackwitz <git@mariusrackwitz.de>.
+
+# Known Issues
 
 - Flickering when adding or removing segments in fast interval (in Example project: select the right most, add many, select the left most, remove many, you will see the shadow and border don't move exactly synchronously)
